@@ -1,0 +1,29 @@
+
+    h1{
+        text-align: center;
+        color: green;
+    }
+    .a{
+        background-color: pink;
+        text-align: center;
+        color:deeppink;
+        font-size: 30px;;
+    }
+    .Nen{
+        background-color:beige;
+    }
+    body{
+        text-align: center;
+    }
+    .D1{
+        color: blue;
+    }
+    .D2{
+        color:pink;
+    }
+    .D3{
+        color:green;
+    }
+    hr{
+        width:50%;
+    }
