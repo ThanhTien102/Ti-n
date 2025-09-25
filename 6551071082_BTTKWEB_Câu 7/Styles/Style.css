@@ -1,0 +1,19 @@
+
+    h1{
+        text-align: center;
+        color: rgb(70, 37, 37);
+    }
+    table,th,td{
+        border: 1px solid brown;
+        background-color: aquamarine;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+    }
+    #panel.flip{
+
+    }
+    #panel {
+  display: none;
+           }

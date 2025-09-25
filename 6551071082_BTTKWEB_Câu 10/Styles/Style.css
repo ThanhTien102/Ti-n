@@ -1,0 +1,30 @@
+
+    h1{
+        text-align: center;
+        color: white;
+        background-color:rgb(2, 2, 86) ;
+    }
+
+    .container{
+        display: flex;
+        width: 800px;
+        height:500px;
+        border: 1px solid black; 
+        align:center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    a:link{ color:rgb(0, 140, 255)}
+    a:visited{ color:blueviolet}
+    a:hover{color:blueviolet}
+    .text1{
+        border-right: 2px solid orange;
+        width: 250px;
+        background-color:aqua ;
+    }
+    .text2{
+        padding: 10px;
+    }
+    .can{
+        text-align: center;
+    }

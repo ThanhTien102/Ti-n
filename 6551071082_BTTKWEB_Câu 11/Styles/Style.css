@@ -1,0 +1,23 @@
+    body { font-family: Arial, sans-serif; }
+    .menu-ngang ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #f39c12;
+        display: flex;
+        text-align: center;
+    }
+    .menu-ngang li {
+    flex-grow: 1; 
+}
+    .menu-ngang li a {
+        display: block;
+        color: #000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .menu-ngang li:hover {
+        background-color: #e67e22;
+    }

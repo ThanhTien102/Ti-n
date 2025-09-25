@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/Style.css">   
+  </head>
+  <h1>Đăng kí du lịch</h1>
+  <form onsubmit="myFunction(event)">
+    <table>
+    <tr>
+    <td>Họ và tên</td>
+    <td><input type="text" class="dai" ></td>
+    </tr>
+    <tr>
+      <td>Địa chỉ</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Điện thoại</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td>Khách Việt Nam</td>
+      <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+      <td>Chọn tour</td>
+      <td>
+        <select name="tour" id="tour">
+          <option value="BMT-KT">Buôn mê thuộc-Gia Lai-Kontum</option>
+          <option value="VN-M">Việt Nam-Mĩ</option>
+          <option value="VN-C">Việt Nam-Campuchia</option>
+          <option value="LA-BT">Long An-Bến Tre</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Phương tiện</td>
+      <td>
+        <input type="radio" id="Maybay" name="Ptien">
+        <label for="Ptien">Máy bay</label>
+        <input type="radio" id="Xe" name="Ptien">
+        <label for="Ptin">Xe ô tô</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+<fieldset class="guest-group">
+    <legend>Số lượng đoàn khách</legend> 
+    <table class="nest">
+        <tr>
+            <td >Người lớn</td>
+            <td><input type="text" value="6"></td>
+            <td>Trẻ em</td>
+            <td><input type="text" value="4"></td>
+        </tr>
+    </table>
+</fieldset>
+</td>
+    </tr>
+    <tr>
+      <td>Ghi chú thêm</td>
+      <td><textarea name="message" rows="10" cols="30"></textarea></td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><input type="submit" value="đồng ý"</td>
+    </tr>
+    <tr id="An">
+      <td colspan="2" align="center ">Bạn đã đăng kí thành công</td>
+  </tr>
+    </table>
+  </form>
+    <script src="javascript/script.js"></script>
+</html>

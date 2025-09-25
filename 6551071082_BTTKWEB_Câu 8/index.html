@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/Style.css">
+  </head>
+  <body>
+    <h1>Phiếu đăng ký tham ga chương trình khuyến mãi</h1>
+    <form onsubmit="myFunction(event)">
+      <table>
+<tr>
+  <td>Họ và tên</td>
+  <td><input type="text" required></td>
+</tr>
+<tr>
+  <td>Địa chỉ</td>
+  <td><input type="text" required></td>
+</tr>
+<tr>
+  <td>Điện thoại</td>
+  <td><input type="text" required></td>
+</tr>
+<tr>
+  <td>Phái</td>
+  <td>
+    <input type="radio" id="Nam" name="Phai">
+    <label for="Nam">Nam</label>
+    <input type="radio" id="Nu" name="Phai">
+    <label for="Nu">Nữ</label>
+  </td>
+</tr>
+<tr>
+  <td>Nghề nghiệp</td>
+  <td><select id="Nghenghiep" name="Nghenghiep" required>
+    <option value="Bacsi">Bác sĩ</option>
+    <option value="Congnhan">Công nhân</option>
+    <option value="Giaovien">Giáo viên</option>
+    <option value="Casi">Ca sĩ</option>
+  </select></td>
+</tr>
+<tr>
+  <td>Chọn sản phẩm tham gia</td>
+  <td><select name="Sanpham" id="sanpham" multiple="4">
+    <option value="KDR">Kem đánh răng</option>
+    <option value="BG">Bột giặt</option>
+    <option value="DGĐ">Dầu gội đầu</option>
+    <option value="ST">Sữa tắm</option>
+  </select></td>
+</tr>
+<tr>
+  <td>Số người dự đoán tham gia</td>
+  <td><input type="text"</td>
+</tr>
+<tr>
+  <td align="center" colspan="2"><input type="submit" value="Đồng ý"></td>
+</tr>
+<tr>
+  <td align="center" colspan="2">
+    <div id="panel">Bạn đã đăng kí thành công</div>
+  </td>
+</tr>
+      </table>
+    </form>
+    <script>
+function myFunction(event) {
+  event.preventDefault();
+  document.getElementById("panel").style.display = "block";
+}
+</script>
+  </body>
+</html>

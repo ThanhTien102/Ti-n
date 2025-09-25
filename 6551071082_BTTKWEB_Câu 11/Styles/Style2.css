@@ -1,0 +1,28 @@
+    body { font-family: Arial, sans-serif; }
+    .menu-doc {
+        width: 250px; 
+        border: 1px solid #ccc; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu-doc ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-doc .tieu-de {
+        background-color:chocolate;
+        color: white; 
+        padding: 12px 16px;
+        font-weight: bold;
+    }
+    .menu-doc a {
+        display: block; 
+        color: #000;
+        padding: 10px 16px; 
+        text-decoration: none; 
+        border-bottom: 1px solid #ddd; 
+        background-color: #f2f2f2;
+    }
+    .menu-doc a:hover {
+        background-color: #ddd; }

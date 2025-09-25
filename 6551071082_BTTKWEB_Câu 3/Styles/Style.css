@@ -1,0 +1,15 @@
+
+    h1{
+        text-align: center;
+        color: red;
+    }
+    div{
+        color:blue;
+        padding-left: 50px;
+    }
+    .bottomleft {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  font-size: 20px;
+                }

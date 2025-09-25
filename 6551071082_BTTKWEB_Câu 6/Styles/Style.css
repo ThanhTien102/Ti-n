@@ -1,0 +1,50 @@
+table{
+    margin-left:auto ;
+    margin-right: auto;
+    border-collapse:collapse ;
+    border-color: red;
+    boder: 1px solid red;
+    width: 900px;
+    height: 100%;
+}
+th,td{
+    border: 1px solid red;
+}
+.nendo{
+background-color: red;
+color: white;
+}
+.nenhong{
+    background-color: pink;
+    color: red;
+}
+.canphai{
+    text-align: right;
+}
+ul.section-list {
+  list-style-type:square;; 
+  color: red;
+  padding-left: 20px; 
+}
+    ul, ol {
+        margin-top: 5px;
+        padding-left: 25px;
+    }
+    .top-header {
+        background-color: red;
+        color: white;
+        text-align: right;
+        font-size: 16px;
+        font-weight: bold;
+        padding-right: 20px;
+    }
+        .image-cell {
+        vertical-align: middle;
+        text-align: center;
+        width: 180px; 
+    }
+        .image-cell {
+        vertical-align: middle;
+        text-align: center;
+        width: 20px;
+    }

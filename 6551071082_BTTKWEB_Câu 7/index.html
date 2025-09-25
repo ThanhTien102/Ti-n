@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Styles/Style.css">
+  </head>
+  <body>
+  <h1>Đăng nhập</h1>
+  <table >
+       <form onsubmit="hienThiMatKhau(event)">
+            <table>
+                <tr>
+                    <td>Mã người dùng:</td>
+                    <td><input type="text" required></td>
+                </tr>
+                <tr>
+                    <td>Mật khẩu:</td>
+                    <td><input type="password" id="matkhau" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="submit" value="Đồng ý">
+                    </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><div id="panel"></div> </td>
+                </tr>
+            </table>
+        </form>
+        <div id="panel"></div> 
+  </table>
+                 <script src="javascript/Java.js"></script>
+    </body>
+</html>

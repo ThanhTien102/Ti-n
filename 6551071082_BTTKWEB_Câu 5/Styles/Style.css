@@ -1,0 +1,28 @@
+
+    h1{
+        text-align: center;
+        color: red;
+    }
+    table{
+        width:50%;
+        height:90%;
+        text-align: center;
+        border: 2px solid orange;
+        border-collapse: collapse;
+        align:center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    td,th{
+       border: 1px solid orange; 
+    }
+    thead th{
+        background-color:red;
+        color: while;
+    }
+    .cantrai{
+        text-align: left;
+    }
+    .cangiua{
+        text-align: center;
+    }
