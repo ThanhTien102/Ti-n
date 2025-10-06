@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<script>
+    function GiaiThua(n){
+      if(n===1) return 1;
+      return n* GiaiThua(n-1);
+    }
+    const a = prompt("nhập một số nguyên dương để tính giai thừa:");
+    const n = parseInt(a);
+    let gt=GiaiThua(a);
+    document.write("Giai thua cua "+ a +" la: " +gt);
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script>
+    const now =new Date();
+    const day=now.getDate();
+    const month=now.getMonth()+1;
+    const year=now.getFullYear();
+
+    const hours=now.getHours();
+    const minute=now.getMinutes();
+    const seconds=now.getSeconds();
+
+    const ngayThang="Ngày: "+day+"/"+month+"/"+year;
+    const Gio="Giờ: "+hours+":"+minute+":"+seconds;
+    const kq=ngayThang+" "+Gio;
+    alert(kq);
+</script>
+<body>
+</body>
+</html>

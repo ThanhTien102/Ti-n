@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <script>
+function SNT(n)
+{
+if(n < 2){ return 0;}
+for(let i=2;i*i<=n;i++){
+  if(n%i === 0){ return false;}
+                      }
+  return true;
+}
+function inSNT(n){
+  const dsSNT= [];
+  for(let i =2;i<n;i++){
+    if(SNT(i))
+  {
+    dsSNT.push(i);
+  }
+                       }
+  return dsSNT;
+}
+let kq=inSNT(30);
+alert(kq.join(','));
+  </script>
+</body>
+</html>

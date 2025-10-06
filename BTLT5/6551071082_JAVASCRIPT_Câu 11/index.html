@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<script>
+  function daonguocSo(so){
+    const chuoi=so.toString();
+    const mang=chuoi.split('');
+    const mangDaoNguoc = mang.reverse();
+    const chuoiMoi =mangDaoNguoc.join('');
+    const kqCuoi=parseInt(chuoiMoi);
+    return kqCuoi;
+  }
+  alert(daonguocSo(654321));
+</script>
+<body>
+</body>
+</html>

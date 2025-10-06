@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<script>
+function LaiSuat(tienGoc,laiSuatNam,soNam){
+  let laiSuatThapPhan=laiSuatNam/100;
+  return tienGoc * (1 + laiSuatThapPhan *soNam);
+}
+    const inputTienGoc= prompt("Nhập số tiền gốc:");
+    const tienGoc = parseFloat(inputTienGoc);
+    const inputLaiSuat = prompt("Nhập lãi suất hàng năm (%):");
+    const laiSuatNam = parseFloat(inputLaiSuat);
+    const inputSoNam = prompt("Nhập số năm gửi:");
+    const soNam = parseFloat(inputSoNam);
+    const ketQua = LaiSuat(tienGoc, laiSuatNam, soNam);
+    document.write("Tổng số tiền nhận được sau " + inputSoNam + " năm là: " + ketQua);
+
+</script>
+<body>
+</body>
+</html>
