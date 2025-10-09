@@ -1,0 +1,12 @@
+table,th,td{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    border-collapse:collapse ;
+}
+.button{
+    width: 100px;
+    height:50px;
+    border-radius: 25px; ;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <table align="center">
+        <tr>
+            <td>
+                <label for="dayInput">Ngày :</label>
+                <input type="number" id="dayInput" value="12" style="width: 50px;">
+            </td>
+            <td>
+                <label for="monthInput">Tháng Select:</label>
+                <input type="number" id="monthInput" value="1" style="width: 50px;">
+            </td>
+            <td>
+                <label for="yearInput">Năm:</label>
+                <input type="number" id="yearInput" value="2025" style="width: 70px;">
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="3" align="center">
+                <input type="button" value="Xuất Thứ" onclick="displayDayOfWeek()">
+            </td>
+        </tr>
+        
+        <tr>
+            <td colspan="3" id="output" align="center">
+                <span id="resultDate"></span>
+            </td>
+        </tr>
+    </table>
+    <script src="javascript/scrip.js"></script>
+</body>
+</html>

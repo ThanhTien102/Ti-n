@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/style.css"> 
+</head>
+<body>
+    <table border="3" align="center">
+    <tr>
+        <td>Lương</td>
+        <td>
+            <input type="number" id="baseSalary" value="1000000">
+        </td>
+    </tr>
+        <tr>
+            <td>Hệ số lương</td>
+            <td>
+                <input type="number" id="salaryFactor" value="3.2">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">                
+            <input type="button" value="Tính lương tháng" onclick="calculateSalary()">
+            </td>
+        </tr>
+        <tr>
+    <td>Lương tháng</td>
+        <td>
+        <span id="monthlySalary">3200000</span>
+        </td>
+        </tr>
+
+    </table>
+    <script src="javascript/scrip.js"></script>
+</body>
+</html>

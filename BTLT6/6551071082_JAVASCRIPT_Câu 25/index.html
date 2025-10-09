@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/style.css">
+    </head>
+<body>
+<table border="3">
+    <tr>
+        <th align="center" colspan="3">Thực đơn</th>
+    </tr>
+    <tr>
+        <th>Thức ăn</th>
+        <th>Nước uống</th>
+        <th>Thời điểm</th>
+    </tr>
+    <tr>
+        <td>
+        <select id="thucan" multiple>
+  <option>Bún bò</option>
+  <option>Hủ tiếu</option>
+  <option>Bánh canh</option>
+  <option>Phở bò</option>
+  <option>Nuôi</option>
+  <option>Bánh mì thịt</option>
+  <option>Bánh cuốn</option>
+        </select>
+        </td>
+        <td>
+<select id="nuocuong" multiple>
+  <option>Cà phê đá</option>
+  <option>Cà phê sữa đá</option>
+  <option>Chanh dây</option>
+  <option>Chanh muối</option>
+  <option>Xí muội</option>
+  <option>Sữa tươi</option>
+  <option>Cam vắt</option>
+</select>
+        </td>
+        <td>
+    <input type="radio" id="ngay" name="time" checked>Ban ngày <br>
+    <input type="radio" id="dem" name="time">Ban đêm        
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center" >
+            <button type="submit">Tính tiền</button>
+        </td>
+    </tr>
+    <tr>
+        <td></td>
+    </tr>
+</table>
+    <script src="javascript/scrip.js"></script>
+</body>
+</html>
