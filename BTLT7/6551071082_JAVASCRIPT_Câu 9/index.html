@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+</style>
+<link rel="stylesheet" href="Styles/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+    $(function(){
+$("#finishBtn").click(function(){
+    const email = $("#email").val().trim();
+    const birthday = $("#birthday").val().trim();
+    const zip=$("#zipCode").val().trim();
+    
+    if(!$("#name").val().trim()) err +=" Nhập họ tên.<br>";
+    if(!$("input[name='gender']:checked").val()) err +="Chọn giới tính.<br>";
+    if(!email.match(emailRe)) err+="Email không hợp lệ.<br>";
+    if(!birthday.match(dateRe)) err+="Ngày sinh đ/mm/yyyy.<br>";
+    if(!$("#address").val().trim()) err+="Nhập địa chỉ.<br>";
+    if(!$("#city").val().trim()) err+="Nhập thành phố.<br>";
+    if(!$("#region").val().trim()) err+="Chọn khu vực.<br>";
+    if(!zip.match(zipRe)) err +="Zip code gồm 5 chữ số.<br>";
+
+    if(err){
+        $("#error-message").html(err);
+    } else{
+        $("#error-message").html("");
+        alert("Nhập thành công");
+    }
+});
+$("#clearBtn").click(function(){
+    $("#personalInfoForm")[0].reset();
+    $("#error-message").empty();
+});
+    });
+</script>
+</head>
+<body>
+  <h3>Personal Information</h3>
+<form id="personalInfoForm" onsubmit="return false;">
+    <label for="name">Enter name*:</label>
+    <input type="text" id="name">
+
+    <div class="gender-group">
+        <label>Sex*:</label>
+        <label for="male"><input type="radio" name="gender" id="male" value="male"> Male</label>
+        <label for="female"><input type="radio" name="gender" id="female" value="female"> Female</label>
+    </div>
+    <label for="email">Enter email address*:</label>
+    <input type="text" id="email">
+    <label for="birthday">Enter birthday (MM/DD/YYYY)*:</label>
+    <input type="text" id="birthday">
+    <label for="address">Enter street address (line 1)*:</label>
+    <input type="text" id="address">
+    <label for="city">Enter city*:</label>
+    <input type="text" id="city">
+    <label for="region">Select a region*:</label>
+    <select id="region">
+        <option value="">-- Please Select --</option>
+        <option value="1">Nông Thôn</option>
+        <option value="2">Thành Thị</option>
+        <option value="3">Campuchia</option>
+    </select>
+    <label for="zipCode">Enter 5-digit Zip code*:</label>
+    <input type="text" id="zipCode">
+    <div id="error-message" class="error"></div>
+    <button type="submit" id="finishBtn">Finished</button>
+    <button type="button" id="clearBtn">Clear</button>
+</form>
+</body>
+</html>

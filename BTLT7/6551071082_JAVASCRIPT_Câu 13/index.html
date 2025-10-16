@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Home</title>
+<meta charset="UTF-8">
+<!--Font Awesome CDN Link-->
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<script src="javascript/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="Styles/Style.css">
+<script>
+  $(document).ready(function(){
+        $('#show_eye').on('click', function(){
+            $('#passwordInput').attr('type', 'text');
+            $(this).hide();
+            $('#hide_eye').show();
+        });
+        $('#hide_eye').on('click', function(){
+            $('#passwordInput').attr('type', 'password');
+            $(this).hide();
+            $('#show_eye').show();
+        });
+    });
+</script>
+</head>
+<body>
+<div class="password-show-card">
+        <input type="password" class="input-control" placeholder="Enter Password" id="passwordInput">
+        <i class="fa fa-eye" id="show_eye"></i>
+        <i class="fa fa-eye-slash" id="hide_eye" style="display: none;"></i>
+    </div>
+		<!-- <i class="fa fa-eye-slash"></i> -->
+</body>
+</html>

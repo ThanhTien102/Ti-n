@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script>
+    $(document).ready(function(){
+      $('#myonoffswitch').on('change', function(){
+           $('#img-on').toggleClass('fadeEffect');
+           $('#img-off').toggleClass('fadeEffect');
+        });
+    });
+    </script>
+</head>
+
+<body>
+    <!--IMAGE EFFECT-->
+    <div class="image-effect" id="image-effect-2">
+        <img src="Images/off.png" id="img-off" class="fadeEffect">
+        <img src="Images/on.png" id="img-on" >
+    </div>
+
+    <!--Switch Button-->
+    <div class="switch-btn">
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox toggle-switch-2" id="myonoffswitch" tabindex="0" checked>
+            <label class="onoffswitch-label" for="myonoffswitch">
+            <span class="onoffswitch-inner"></span>
+            <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

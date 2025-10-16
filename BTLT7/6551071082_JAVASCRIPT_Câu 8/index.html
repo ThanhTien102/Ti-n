@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Calculator with Equals Button</title>
+<link rel="stylesheet" href="Styles/Style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+    let firstNumber = null;
+    let selectedOperator = null;
+    $(".operator").click(function(){
+        const num1Value = parseFloat($("#num1").val());
+        firstNumber = num1Value;
+        selectedOperator = $(this).text();
+        $(".operator").removeClass('operator-active');
+        $(this).addClass('operator-active');
+        $("#result").val(''); 
+        console.log(`Đã lưu số: ${firstNumber}, phép toán: '${selectedOperator}'. Vui lòng nhập số thứ 2 và nhấn =`);
+    });
+    $("#equalsBtn").click(function(){
+        const num2 = parseFloat($("#num2").val());
+        let result; 
+        switch(selectedOperator) {
+            case '+': result = firstNumber + num2; break;
+            case '-': result = firstNumber - num2; break;
+            case 'x': result = firstNumber * num2; break;
+            case '/': result = firstNumber / num2; break;
+            case '^': result = Math.pow(firstNumber, num2); break;
+        }
+        if (typeof result === 'number') {
+            $("#result").val(Number(result.toFixed(4))); 
+        } else {
+            $("#result").val(result); 
+        }
+        firstNumber = null;
+        selectedOperator = null;
+        $(".operator").css('border-color', '#999');
+    });
+});
+</script>
+</head>
+<body>
+<div class="calculator"> 
+    <input type="text" id="num1">
+    <button class="operator">+</button>
+    <button class="operator">-</button>
+    <button class="operator">x</button>
+    <button class="operator">/</button>
+    <button class="operator">^</button>
+    <input type="text" id="num2" >
+    <button id="equalsBtn">=</button>
+    <input type="text" id="result">
+</div>
+</body>
+</html>

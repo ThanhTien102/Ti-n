@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">	
+<title>D CODE SHOW</title>
+<link rel="stylesheet" href="Styles/bootstrap.min.css">
+<link rel="stylesheet" href="Styles/Style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+    $('#passportCheck').click(function(){
+        if ($(this).is(':checked')) {
+            $('#passportBox').show();
+            $('#passportApply').hide();
+        } else {
+            $('#passportBox').hide();
+            $('#passportApply').show();
+        }
+    });
+    $('#cardCheck').click(function(){
+        if ($(this).is(':checked')) {
+            $('#cardBox').show();
+            $('#cardApply').hide();
+        } else {
+            $('#cardBox').hide();
+            $('#cardApply').show();
+        }
+    });
+});
+</script>
+</head>
+<body>
+<h4>Checkbox Div Hide Show</h4>
+
+<div class="checkbox-card">
+	<label for="">Do You have Passport</label>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" class="checkme" id="passportCheck">Yes
+		</label>
+	</div>
+	<div class="passport-box" id="passportBox">
+		<input type="text" placeholder="Enter Passport Number" 
+		class="form-control">
+	</div>
+	<div class="apply-box" id="passportApply">
+		<a href="">Apply For Passport</a>
+	</div>
+</div>
+<br>
+
+<div class="checkbox-card">
+	<label for="">Do You have Credit Card</label>
+	<div class="checkbox" >
+		<label>
+			<input type="checkbox" class="checkme" id="cardCheck">Yes
+		</label>
+	</div>
+	<div class="passport-box" id="cardBox">
+		<input type="text" placeholder="Enter Credit Card Number" 
+		class="form-control">
+	</div>
+	<div class="apply-box" id="cardApply">
+		<a href="">Apply For Credit Card</a>
+	</div>
+</div>
+
+
+</body>
+</html>
