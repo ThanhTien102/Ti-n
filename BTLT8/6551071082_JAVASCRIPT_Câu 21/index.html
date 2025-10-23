@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/Style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('#addBtn').on('click', function() {
+        addTask();
+    });
+    $('#taskInput').on('keypress', function(event) {
+        if (event.which === 13) { 
+            addTask();
+        }
+    });
+    function addTask() {
+        var taskText = $('#taskInput').val(); 
+        if (taskText.trim() !== "") { 
+            var newItem = '<li>' + taskText + ' <span class="delete">X</span></li>';
+            $('#taskList').append(newItem);
+            $('#taskInput').val(""); 
+        }
+    }
+    $('#taskList').on('click', 'li', function() {
+        $(this).toggleClass('completed');
+    });
+    $('#taskList').on('click', '.delete', function(event) {
+        event.stopPropagation();
+        $(this).parent().fadeOut(300, function() {
+            $(this).remove(); 
+        });
+    });
+
+});
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>WORK TO-DOS</h1>
+        <p style="text-align: center;color:yellow">Enter text into the input field to add items to your list.</p>
+        <p style="text-align:center;color:green">Click the item to mark it as complete.</p>
+        <p class="instructions">Click the "X" to remove the item from your list.</p>
+        <input type="text" id="taskInput" placeholder="New Item...">
+        <button id="addBtn">+</button> 
+        <ul id="taskList">
+            <li>Làm Bài Tập Làm Thêm <span class="delete">X</span></li>
+            <li class="completed">Học Lập Trình Web <span class="delete">X</span></li>
+        </ul>
+    </div>
+</body>
+</html>

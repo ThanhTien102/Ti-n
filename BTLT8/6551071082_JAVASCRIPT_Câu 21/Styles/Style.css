@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #008C9E; /* Màu nền xanh */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    float: left; /* Để nút nằm bên cạnh */
+}
+
+#addBtn {
+    width: 20%;
+    padding: 10px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addBtn:hover {
+    background: #333;
+}
+
+ul {
+    list-style-type: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin-top: 50px; /* Thêm khoảng cách sau input */
+}
+
+li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    cursor: pointer; /* Biến con trỏ thành hình bàn tay */
+}
+
+/* Đây là CSS cho việc đã hoàn thành */
+li.completed {
+    background: #c8e6c9; /* Màu xanh lá nhạt */
+    color: #555;
+    text-decoration: line-through; /* Gạch ngang chữ */
+}
+
+/* Nút "X" để xóa */
+.delete {
+    float: right;
+    color: #f44336;
+    font-weight: bold;
+    display: none; /* Ẩn nút X đi */
+}
+
+/* Khi di chuột vào li, hiện nút X lên */
+li:hover .delete {
+    display: inline;
+}
+
+.delete:hover {
+    color: #b71c1c; /* Đậm hơn khi di chuột vào */
+}
